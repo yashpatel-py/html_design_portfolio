@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/img/favicon.png" type="image/png">
+    <title>Breed Portfolio - Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/vendors/linericon/style.css">
+    <link rel="stylesheet" href='/static/css/themify-icons.css'>
+    <link rel="stylesheet" href='/static/vendors/owl-carousel/owl.theme.default.min.css'>
+    <link rel="stylesheet" href='/static/vendors/fontawesome/css/all.min.css'>
+    <link rel="stylesheet" href='/static/vendors/owl-carousel/owl.carousel.min.css'>
+    <link rel="stylesheet" href='/static/vendors/nice-select/css/nice-select.css'>
+    <!-- main css -->
+    <link rel="stylesheet" href='/static/css/style.css'>
+  </head>
+  <body>
+
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="#"><img src='#' alt="my logo here"></a>
+            <a class="navbar-brand logo_inner_page" href="#"><img src='My logo here' alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+              <ul class="nav navbar-nav menu_nav">
+                <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">My work</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog/blog.html">Blog</a></li>
+
+                <li class="nav-item submenu dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">Category</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">html</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">css</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!--================ End Header Area =================-->
+
+    <!--================ Start Banner Area =================-->
+    <section class="banner_area">
+      <div class="banner_inner d-flex align-items-center">
+        <div class="container">
+          <div class="banner_content text-center">
+            <h2>Our Blog</h2>
+            <div class="page_link">
+              <a href="/">Home</a>
+              <a href="/blog/">Blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================ End Banner Area =================-->
+
+    <!--================Blog Area =================-->
+    <section class="blog_area section-margin">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-5 mb-lg-0">
+            <div class="blog_left_sidebar">
+              <article class="blog_item">
+                <div class="blog_item_img">
+                  <img class="card-img rounded-0" src="/static/img/blog/blog1.png" alt="">
+                  <a href="#" class="blog_item_date">
+                    <h3>15</h3>
+                    <p>Jan</p>
+                  </a>
+                </div>
+
+                <div class="blog_details">
+                  <a class="d-inline-block" href="{% url 'blog-details' post.id %}">
+                    <h2>How to cook ?</h2>
+                  </a>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ad impedit ipsum labore eaque id.
+                    Accusamus numquam optio similique officia expedita molestias modi dolores corrupti quae, iure
+                    deleniti porro consequatur voluptatibus sapiente omnis voluptatem debitis minima fugit odio at
+                    impedit sit mollitia doloremque. Illo vero eius ut, voluptas mollitia in repellendus aspernatur
+                    possimus magni maiores dignissimos dolorum, natus exercitationem obcaecati incidunt tenetur sequi.
+                    Accusantium praesentium, labore voluptates quod numquam optio tempore ab quasi amet vel est
+                    architecto nisi facilis nulla perspiciatis ex! Possimus deleniti quisquam, exercitationem minus nam
+                    aliquid doloremque consequatur. Maiores architecto qui ex cumque libero culpa dolorum velit.</p>
+                  <ul class="blog-info-link">
+                    <li><a href="#"><i class="far fa-user"></i>Cook</a></li>
+                    <li><a href="#"><i class="far fa-comments"></i> 03 Comments</a></li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================Blog Area =================-->
+
+
+
+    <!--================Footer Area =================-->
+
+    <footer class="footer_area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="footer_top flex-column">
+              <div class="footer_logo">
+                <a href="/">
+                  <img src="/static/img/logosmall.jpg" alt="logo">
+                </a>
+                <div class="d-lg-block d-none">
+                  <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+                    <div class="collapse navbar-collapse offset">
+                      <ul class="nav navbar-nav menu_nav mx-auto">
+                        <li class="nav-item"><a class="nav-link text-white" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/portfolio/">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="/contact">Contact</a></li>
+
+                        <li class="nav-item"><a class="nav-link text-white" href="/about">About</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+              <div class="footer_social mt-lg-0 mt-4">
+                <a href="https://www.facebook.com/kevin.pandya.39142" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a href="https://m.youtube.com/channel/UCqLQ3VNZ0fOkH1e-QfSCEvg" target="_blank"><i
+                    class="ti-github"></i></a>
+                <a href="https://www.instagram.com/karate_kid_kevin/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/kevinPandya6" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://m.youtube.com/channel/UCqLQ3VNZ0fOkH1e-QfSCEvg" target="_blank"><i
+                    class="ti-youtube"></i></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row footer_bottom justify-content-center">
+          <p class="col-lg-8 col-sm-12 footer-text">
+
+            Copyright &copy;
+            <script>document.write(new Date().getFullYear());</script> All rights reserved | Created By kevin
+
+        </div>
+      </div>
+    </footer>
+
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/stellar.js"></script>
+    <script src="/static/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="/static/vendors/isotope/isotope-min.js"></script>
+    <script src="/static/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/static/js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="/static/js/gmaps.min.js"></script>
+    <script src="/static/js/theme.js"></script>
+
+  </body>
+
+</html>

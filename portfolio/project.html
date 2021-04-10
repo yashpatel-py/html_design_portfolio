@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/img/favicon.png" type="image/png">
+    <title>Breed Portfolio - Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/vendors/linericon/style.css">
+    <link rel="stylesheet" href='/static/css/themify-icons.css'>
+    <link rel="stylesheet" href='/static/vendors/owl-carousel/owl.theme.default.min.css'>
+    <link rel="stylesheet" href='/static/vendors/fontawesome/css/all.min.css'>
+    <link rel="stylesheet" href='/static/vendors/owl-carousel/owl.carousel.min.css'>
+    <link rel="stylesheet" href='/static/vendors/nice-select/css/nice-select.css'>
+    <!-- main css -->
+    <link rel="stylesheet" href='/static/css/style.css'>
+  </head>
+  <body>
+
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="#"><img src='#' alt="my logo here"></a>
+            <a class="navbar-brand logo_inner_page" href="#"><img src='My logo here' alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+              <ul class="nav navbar-nav menu_nav">
+                <li class="nav-item active"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio/portfolio.html">My work</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="blog/blog.html">Blog</a></li>
+
+                <li class="nav-item submenu dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">Category</a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" href="#">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">html</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">css</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+		<!--================ Start Banner Area =================-->
+		<section class="banner_area">
+			<div class="banner_inner d-flex align-items-center">
+				<div class="container">
+					<div class="banner_content text-center">
+						<h2>Portfolio</h2>
+						<div class="page_link">
+							<a href="{% url 'home' %}">Home</a>
+							<a href="{% url 'portfolio' %}">Portfolio</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================ End Banner Area =================-->
+
+
+		<!--================ Start Portfolio Area =================-->
+		<section class="portfolio_area section-margin pb-0" id="portfolio">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="main_title">
+							<p class="top_text">Our Portfolio <span></span></p>
+							<h2>Check Our Recent <br>
+								Client Work </h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="filters portfolio-filter">
+					<ul>
+						<li class="active" data-filter="*">all</li>
+						<li data-filter="#">web</li>
+					</ul>
+				</div>
+
+				<div class="filters-content">
+					<div class="row portfolio-grid">
+						<div class="grid-sizer col-md-3 col-lg-3"></div>
+						<div class="col-lg-6 col-md-6 all">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="/static/img/blog/blog1.png" alt="">
+								<div class="overlay"></div>
+								<div class="short_info">
+									<h4><a href="#">Cooking</a>
+									</h4>
+									<p>How to cook ?</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam modi laborum sequi officiis sed obcaecati vitae, quod eligendi qui tenetur, molestias explicabo! Optio quisquam, officiis tempora quaerat distinctio ratione cupiditate.....</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 all">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="/static/img/blog/blog1.png" alt="">
+								<div class="overlay"></div>
+								<div class="short_info">
+									<h4><a href="portfolio-details.html">Cooking</a>
+									</h4>
+									<p>How to cook ?</p>
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam modi laborum sequi officiis sed obcaecati vitae, quod eligendi qui tenetur, molestias explicabo! Optio quisquam, officiis tempora quaerat distinctio ratione cupiditate.....</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--================ End Portfolio Area =================-->
+		<footer class="footer_area">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="footer_top flex-column">
+							<div class="footer_logo">
+								<a href="#">
+									<img src="/static/img/logo2.png" alt="logo">
+								</a>
+								<div class="d-lg-block d-none">
+									<nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+										<div class="collapse navbar-collapse offset">
+											<ul class="nav navbar-nav menu_nav mx-auto">
+												<li class="nav-item"><a class="nav-link text-white" href="#">Home</a>
+												</li>
+												<li class="nav-item"><a class="nav-link text-white" href="#">About</a>
+												</li>
+												<li class="nav-item"><a class="nav-link text-white"
+														href="#">Portfolio</a></li>
+												<li class="nav-item"><a class="nav-link text-white" href="#">BLog</a>
+												</li>
+												<li class="nav-item"><a class="nav-link text-white" href="#">Services
+													</a></li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+							</div>
+							<div class="footer_social mt-lg-0 mt-4">
+								<a href="https://www.facebook.com/sajib1066" target="_blank"><i
+										class="fab fa-facebook-f"></i></a>
+								<a href="https://twitter.com/sajib1066" target="_blank"><i
+										class="fab fa-twitter"></i></a>
+								<a href="https://join.skype.com/invite/frQeKWH37d6y" target="_blank"><i
+										class="fab fa-skype"></i></a>
+								<a href="https://github.com/sajib1066" target="_blank"><i class="fab fa-github"></i></a>
+								<a href="https://www.linkedin.com/in/sajib1066/" target="_blank"><i
+										class="fab fa-linkedin"></i></a>
+								<a href="https://www.youtube.com/channel/UCsYH30yFN391zg-UUQ8BhTw" target="_blank"><i
+										class="ti-youtube"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row footer_bottom justify-content-center">
+					<p class="col-lg-8 col-sm-12 footer-text">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with
+						<i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+							target="_blank">Colorlib</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</footer>
+		<script src="/static/js/jquery-3.2.1.min.js"></script>
+		<script src="/static/js/popper.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/stellar.js"></script>
+		<script src="/static/vendors/isotope/imagesloaded.pkgd.min.js"></script>
+		<script src="/static/vendors/isotope/isotope-min.js"></script>
+		<script src="/static/vendors/owl-carousel/owl.carousel.min.js"></script>
+		<script src="/static/js/jquery.ajaxchimp.min.js"></script>
+		<script src="/static/js/mail-script.js"></script>
+		<!--gmaps Js-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+		<script src="/static/js/gmaps.min.js"></script>
+		<script src="/static/js/theme.js"></script>
+	</body>
+</html>
